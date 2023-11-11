@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>The HeapTester - minimum heap / prio queue</string>
+  </property>
+  <widget class="HeapTestWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHeapTester">
+    <property name="title">
+     <string>HeapTester</string>
+    </property>
+    <addaction name="actionClear_Heap"/>
+    <addaction name="actionDelete_Min"/>
+    <addaction name="actionFill_Random"/>
+    <addaction name="actionragnarsTest"/>
+   </widget>
+   <addaction name="menuHeapTester"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionDelete_Min"/>
+   <addaction name="actionClear_Heap"/>
+   <addaction name="actionragnarsTest"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDelete_Min">
+   <property name="text">
+    <string>Delete Min</string>
+   </property>
+  </action>
+  <action name="actionFill_Random">
+   <property name="text">
+    <string>Fill Random</string>
+   </property>
+  </action>
+  <action name="actionClear_Heap">
+   <property name="text">
+    <string>Clear Heap</string>
+   </property>
+  </action>
+  <action name="actionragnarsTest">
+   <property name="text">
+    <string>ragnarsTest</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HeapTestWidget</class>
+   <extends>QWidget</extends>
+   <header>heaptestwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

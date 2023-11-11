@@ -1,0 +1,8 @@
+#ifndef STUDENTSYSTEMSIMULATOR_H
+#define STUDENTSYSTEMSIMULATOR_H
+
+
+void studentSystemSimulator();
+
+
+#endif // STUDENTSYSTEMSIMULATOR_H
